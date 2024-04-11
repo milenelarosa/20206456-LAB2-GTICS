@@ -18,15 +18,9 @@ public class patitosController {
     }
 
     @PostMapping("/guardar")
-    public String guardarDetallesCuadricula(Juego juego){
-        return "jugandoJuego";
-    }
-
-
-    @GetMapping("/iniciarJuego")
-    public String crearCuadricula(Model model){
-        Juego juego = new Juego();
+    public String guardarDetallesCuadricula(Juego juego, Model model){
         model.addAttribute("juego", juego);
         return "jugandoJuego";
     }
+
 }
