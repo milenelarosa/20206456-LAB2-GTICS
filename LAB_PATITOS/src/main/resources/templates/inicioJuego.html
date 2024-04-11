@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego Patitos</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/fontawesome-all.min.css}">
+</head>
+<body style="margin-right: 50px; margin-left: 50px">
+<br><br><br>
+    <h1>STF GAMES: El escape de los patitos de hule</h1>
+
+    <form method="POST" th:action="@{'/patito_hule/guardar'}">
+        <div class="form-group">
+            <label for="filas">Número de filas: </label>
+            <input name="filas" type="text" class="form-control" id="filas">
+        </div>
+        <div class="form-group">
+            <label for="columnas">Número de columnas: </label>
+            <input name="columnas" type="text" class="form-control" id="columnas">
+        </div>
+        <div class="form-group">
+            <label for="coordenadas">Posiciones iniciales: </label>
+            <input name="coordenadas" type="text" class="form-control" id="coordenadas">
+        </div>
+        <div class="form-group">
+            <label for="cantfotos">Número de fotos tomadas: </label>
+            <input name="cantfotos" type="text" class="form-control" id="cantfotos">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Ejecutar</button>
+    </form>
+
+
+</body>
+</html>
