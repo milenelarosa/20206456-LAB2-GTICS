@@ -18,9 +18,11 @@
     <h1>STF GAMES: El escape de los patitos de hule</h1>
 
     <div class="container">
-        <div class="box">Item one</div>
+        <div th:each="juego, info : ${juego}">Item one</div>
+        <div th:text="${juego.columnas}"></div>
+
         <div class="box">Item two</div>
-        <div class="box blue">Item three has more text </div>
+        <div class="box blue">Item one </div>
         <div class="box">Item four</div>
         <div class="box">Item five</div>
     </div>
